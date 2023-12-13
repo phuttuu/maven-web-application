@@ -1,2 +1,5 @@
-FROM tomcat:8.0.18-jre8
-COPY target/maven-web-application.war /usr/local/tomcat/webapps/maven-web-application.war
+FROM ubuntu
+MAINTAINER Afroz
+RUN apt-get update
+RUN apt-get install vim -y
+CMD /bin/echo "Hello world"
